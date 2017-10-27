@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crustulam</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One|Roboto" rel="stylesheet">
+	<script>
+function timeToEvent(eventDate)
+  {
+      var now = new Date();
+      var output = '';      
+     // количество дней до события
+     var daystoED = Math.floor(Math.round(Date.parse(eventDate)-Date.parse(now))/86400000);
+     daystoED = (daystoED < 1) ? "0"+daystoED : daystoED;
+     // количество часов до события
+     var hourstoED = 24 - now.getHours() - 1;
+       hourstoED = (hourstoED < 10) ? "0"+hourstoED : hourstoED;
+     // количество минут до события
+     var minutestoED = 60 - now.getMinutes() - 1;
+         minutestoED = (minutestoED < 10) ? "0"+minutestoED : minutestoED;
+     // количество секунд до события
+     var secondstoED = 60 - now.getSeconds() - 1;
+     secondstoED = (secondstoED < 10) ? "0"+secondstoED : secondstoED;       
+     //сообщение
+       output = daystoED+" дн. "+hourstoED+" час. "+minutestoED+" мин. "+secondstoED+" сек.";
+   return output;
+}
+
+	    function displayTime(){
+	       
+var elt = document.getElementById("date");//Найти элементс id="clock"
+var elt1 = document.getElementById("back");
+
+elt1.style.backgroundColor = '#fff';
+elt1.style.backgroundImage = "url('https://img1.goodfon.com/original/1920x1080/2/a6/gingerbread-cake-pear-caramel.jpg')";
+var now = new Date();// По лу чить те ку щеевремя
+var endD = new Date(2017, 8, 8);
+var eventDate = new Date(2017,12,12);
+elt.innerHTML = "Осталось: " + timeToEvent(eventDate);//Отобразитьего
+setTimeout(displayTime, 1000);//Вызватсновачерез1сек.
+}
+window.onload = setTimeout(displayTime, 3000);
+	</script>
+<body>
+	<div class="container" id="back">
+		<div class="name">
+			<h1>crustulam</h1>
+		</div>
+		<div class="line">
+			<ul>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="soon">
+			<h2>скоро</h2>
+			<h3 id="date"></h3>
+			
+		</div>
+
+	</div>
+</body>
+</html>

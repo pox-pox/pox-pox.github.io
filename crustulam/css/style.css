@@ -1,0 +1,151 @@
+html,body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+.container {
+/*	background-image: url('https://img1.goodfon.com/original/1920x1080/2/a6/gingerbread-cake-pear-caramel.jpg');*/
+	background-color: #000;
+	min-height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-position: center;
+	background-size: cover;
+	transition: all 2s;
+    
+	
+}
+
+
+
+.name h1{
+	
+	text-align: center;
+	margin: 0px;
+	font-family: 'Poiret One', cursive;
+	font-weight: 200;
+	font-size: 80px;
+	text-transform: uppercase;
+	color: #fff;
+    padding-top: 20%;
+
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	
+}
+/*.container::before {
+    opacity:0;
+    color: #fff;
+    content:"";
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    background-color: black;
+   
+    position: absolute;
+    animation-name: fadeInB;
+	animation-duration: 10s;
+}*/
+
+
+.line{
+	
+	text-align: center;
+
+	
+
+}
+
+.line ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.line ul li{
+	margin: 0px -2px;
+	padding:  0px;
+	display: inline-block;
+	height: 1px;
+	width: 120px;
+	background-color: #fff;
+	
+}
+
+.line ul li:first-child {
+	animation: fadeInLeft 10s;
+	-webkit-animation: fadeInLeft 2s;
+}
+
+.line ul li:last-child {
+	animation: fadeInRight 10s;
+	-webkit-animation: fadeInRight 2s;
+}
+
+
+
+.soon h2, h3{
+	text-align: center;
+	margin: 0px;
+	font-family: 'Poiret One', cursive;
+	font-weight: 100;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #fff;
+	animation-name: fadeIn;
+	animation-duration: 6s;
+}
+
+.soon h3 {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    
+  }
+
+  to {
+    opacity: 1;
+    
+  }
+}
+
+@keyframes fadeInB {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
