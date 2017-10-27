@@ -1,0 +1,113 @@
+ html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	/*background-color: #1E1E20;*/
+	background-image: url('https://img4.goodfon.com/original/1024x768/e/7b/fashion-make-up-black-golden-female.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.logo {
+	position: absolute;
+	top:0%;
+	text-align: center;
+	width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	color: #fff;
+	font-family: 'Libre Barcode 128 Text', cursive;
+	font-size: 50px;
+	background-color: #000;
+
+	animation: fadeIn 3s;
+	-webkit-animation: fadeIn 3s;
+}
+
+.logo p {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+
+.logo_small{
+	font-family: 'Libre Barcode 128 Text', cursive;
+	color: #fff;
+	font-size: 50px;
+	margin: 0px;
+	padding: 15px;
+
+}
+
+.navlogo ul{
+	margin: 0;
+	margin-top: -125px;
+	padding: 0;
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	right: 0px;
+
+
+}
+.navlogo a{
+	text-align: center;
+	text-decoration: none;
+	min-width: 50px;
+	height: 50px;
+	background-color: #fff;
+	display: block;
+	line-height: 50px;
+	font-size: 30px;
+	color: #1E1E20;
+	opacity: 0.5;
+
+}
+.navlogo a:hover {
+	background-color: #374140;
+	cursor: auto; 
+	color: #fff;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

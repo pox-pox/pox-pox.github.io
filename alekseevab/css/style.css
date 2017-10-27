@@ -1,0 +1,258 @@
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+h2 {
+	padding-top: 50px;
+	font-size: 24px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.bg-grey {
+      background-color: #ECF0F1;
+  }
+  
+.navbar {
+     background-color: #2C3E50;
+      /*z-index: 9999;*/
+      border: 0;
+      font-size: 16px;
+     /* letter-spacing: 0.5px;*/
+      border-radius: 0;
+      font-family: Roboto, sans-serif;
+      
+ }
+  .navbar li a {
+      color: #fff !important;
+	  border-bottom: 3px solid #2C3E50;
+	  transition: all .2s ease-in-out;
+	 /* transition: border-bottom .2s ease-in-out;*/
+  }
+  
+.navbar .navbar-brand {
+      font-family: 'Roboto Slab', serif;
+      font-size: 22px;
+      color: #fff !important;;
+	/* border-right: 3px solid #fff;*/
+	 /* border-bottom: 3px solid #fff;*/
+	  /*background-color: #E74C3C;*/
+  }
+  
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #E74C3C !important;
+      /*background-color: #2C3E50;*/
+	  border-bottom: 3px solid #E74C3C;
+	  
+  }
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff;
+}
+ 
+  .header h1 {
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0px;
+	padding-top: 15px;
+	margin: 0px;
+	font-size: 20px;
+	color: #E74C3C;
+}
+
+/*Jumborton*/
+
+.jumbotron {
+	margin: 0px;
+	padding: 0px;
+	padding-top:100px;
+	
+/*	height: 600px;*/
+	background-color: #fff;
+}
+
+.jumbotron .row .col-md-8 {
+    padding: 50px;
+    color: #2C3E50;
+    animation: fadeInRight 2s;
+}
+
+.jumbotron h1 span{
+    margin: 0px;
+	color: #2C3E50;
+	font-family: 'PT Serif', serif;
+	font-size: 50px;
+	border-bottom: 4px solid #E74C3C;
+	
+}
+
+.me {
+    margin-top: 30px;
+}
+
+.me p {
+    font-size: 16px;
+    padding: 0px;
+    line-height: 1;
+}
+.school {
+	color: #2C3E50;
+	height: 600px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.school h4 span {
+    color:#E74C3C ;
+}
+
+/* Навыки */
+
+.thumbnail {
+	min-height:400px;
+	
+}
+.thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+
+.public ul {
+	text-align: left;
+	
+}
+.public h4 {
+	line-height: 1.5;
+	
+}
+
+.public .container {
+    padding-bottom: 50px;
+}
+/* Карусель */
+.carousel-inner {
+margin-bottom: 50px;
+	/*height: 120px;*/
+}
+.item{
+/*	margin-top: 40px ;*/
+}
+.item h3, h4 {
+	align-items: center;
+	padding: 0px ;
+	margin-bottom: 0px ;
+}
+
+
+ .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #E74C3C;
+  }
+  .carousel-indicators{margin-bottom: -50px;}
+  .carousel-indicators li {
+      border-color: #E74C3C;
+  }
+  .carousel-indicators li.active {
+      background-color: #E74C3C;
+  }
+  
+  /* Ключевые навыки */
+  
+   .skills div {
+	  
+	 margin-bottom: 30px; 
+  }
+  
+  .skills_1 div {
+	  display: inline-block;
+	  color: #fff;
+	  padding: 10px 20px;
+	  margin: 3px;
+	  background-color: #2C3E50;
+	 /* margin-bottom: 30px;*/
+  }
+  .skills_2 div {
+	  display: inline-block;
+	  color: #fff;
+	  padding: 10px 20px;
+	  margin: 3px;
+	  background-color: #2980B9;
+  }
+   .skills_3 div {
+	  display: inline-block;
+	  color: #fff;
+	  padding: 10px 20px;
+	  margin: 3px;
+	  background-color: #E74C3C;
+  }
+ 
+ .footer{
+     color: #2C3E50;
+     padding-top:15px;
+     height: 50px;
+     border-top:1px solid #E74C3C ;
+ }
+ 
+
+
+
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+ 
+    @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }}
+    
+    @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+  
